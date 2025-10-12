@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mithra Fashine | Blog </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP NAVBAR ===== -->
+  <header class="top-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== DIVIDER LINE ===== -->
+  <hr class="divider" />
+
+  <!-- ===== LOGO / BRAND CENTER ===== -->
+  <section class="brand-center" id="home">
+    <h1>MITHRA <span>Fashine</span></h1>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/meenasareesonline/" target="_blank">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/exclusive_sareecollection_2023/" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.youtube.com/watch?v=pjo511By9fI" target="_blank">
+        <img src="images/youtube.png" alt="YouTube" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== DIVIDER LINE (under brand name) ===== -->
+  <hr class="divider" />
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <!-- Left Text Box -->
+      <div class="heritage-box left-box">
+        <h2>A Heritage of Style</h2>
+        <h4>A tradition of timeless beauty, woven with elegance and grace.</h4>
+        <h4>Every thread tells a story of Indian artistry.</h4>
+        <h4>Elegance that transcends generations.</h4>
+        <h4>Draped in culture, defined by grace.</h4>
+        <h4>The art of timeless sophistication.</h4>
+      </div>
+
+      <!-- Center Image -->
+      <div class="hero-image">
+        <img src="images/sar.jpg" alt="Saree Image" />
+      </div>
+
+      <!-- Right Text Box -->
+      <div class="heritage-box right-box">
+        <h2>The Essence of Tradition</h2>
+        <h4>Grace that flows through every fold.</h4>
+        <h4>Stories of heritage, woven into every saree.</h4>
+        <h4>Crafted with devotion, adorned with elegance.</h4>
+        <h4>A celebration of womanhood and tradition.</h4>
+        <h4>Timeless, beautiful, and uniquely Indian.</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section id="blogs" class="blog-section">
+    <h2 class="section-title">Our <span>Saree Blogs</span></h2>
+
+    <div class="blog-container">
+      <!-- Blog 1 -->
+      <article id="blog1" class="blog-post">
+        <img src="images/saree1.jpg" alt="Saree 1">
+        <h3>Grace of Indian Silk Saree</h3>
+        <p class="date">Published on: October 2025</p>
+        <p class="desc">The saree is a traditional Indian silk saree with a blue body and gold border.
+          Perfect for festive or formal occasions ✨.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name1" placeholder="Your Name">
+          <textarea id="comment1" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(1)">Post</button>
+          <ul id="commentList1"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 2 -->
+      <article id="blog2" class="blog-post">
+        <img src="images/saree9.jpg" alt="Saree 2">
+        <h3>Charm of Chiffon Saree</h3>
+        <p class="date">Published on: September 2025</p>
+        <p class="desc">The saree is a georgette chiffon saree with heavy silver embroidery.
+          The specialty is its intricate silver work giving it an elegant look.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name2" placeholder="Your Name">
+          <textarea id="comment2" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(2)">Post</button>
+          <ul id="commentList2"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 3 -->
+      <article id="blog3" class="blog-post">
+        <img src="images/saree3.jpg" alt="Saree 3">
+        <h3>Grace of Kanjivaram Silk Saree</h3>
+        <p class="date">Published on: November 2025</p>
+        <p class="desc">The fabric has a beautiful, soft drape and a subtle sheen, suggesting a luxurious yet comfortable material.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name3" placeholder="Your Name">
+          <textarea id="comment3" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(3)">Post</button>
+          <ul id="commentList3"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 4 -->
+      <article id="blog4" class="blog-post">
+        <img src="images/saree4.jpg" alt="Saree 4">
+        <h3>Known Printed with Embellished Saree</h3>
+        <p class="date">Published on: August 2025</p>
+        <p class="desc">It has glittering border and pallu, richly detailed with gold zari and sequin or cut-dana work.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name4" placeholder="Your Name">
+          <textarea id="comment4" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(4)">Post</button>
+          <ul id="commentList4"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 5 -->
+      <article id="blog5" class="blog-post">
+        <img src="images/saree5.jpg" alt="Saree 5">
+        <h3>Grace of Brocade Silk Saree</h3>
+        <p class="date">Published on: October 2025</p>
+        <p class="desc">This style is known for its graceful drape and simplicity, making it a versatile choice for traditional gatherings.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name5" placeholder="Your Name">
+          <textarea id="comment5" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(5)">Post</button>
+          <ul id="commentList5"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 6 -->
+      <article id="blog6" class="blog-post">
+        <img src="images/saree7.jpg" alt="Saree 6">
+        <h3>Grace of Banarasi Saree</h3>
+        <p class="date">Published on: December 2025</p>
+        <p class="desc">This glamorous, lightweight style is perfect for evening events, cocktail parties, and formal soirées.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name6" placeholder="Your Name">
+          <textarea id="comment6" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(6)">Post</button>
+          <ul id="commentList6"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 7 -->
+      <article id="blog7" class="blog-post">
+        <img src="images/saree6.jpg" alt="Saree 7">
+        <h3>Grace of Maheshwari SoftSilk</h3>
+        <p class="date">Published on: April 2025</p>
+        <p class="desc">A rich, vibrant emerald green silk saree with small, spaced-out gold zari buttas.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name7" placeholder="Your Name">
+          <textarea id="comment7" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(7)">Post</button>
+          <ul id="commentList7"></ul>
+        </div>
+      </article>
+
+      <!-- Blog 8 -->
+      <article id="blog8" class="blog-post">
+        <img src="images/saree8.jpg" alt="Saree 8">
+        <h3>Grace of Kanchipuram Silk</h3>
+        <p class="date">Published on: December 2025</p>
+        <p class="desc">Known for its vibrant colors and gold zari borders, the Kanchipuram silk saree is a mark of South Indian elegance.</p>
+        <div class="comment-box">
+          <h4>Leave a Comment</h4>
+          <input type="text" id="name8" placeholder="Your Name">
+          <textarea id="comment8" placeholder="Your Comment"></textarea>
+          <button onclick="addComment(8)">Post</button>
+          <ul id="commentList8"></ul>
+        </div>
+      </article>
+
+    </div> <!-- /.blog-container -->
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about">
+  <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 40px 20px;">
+    
+    <!-- About Image -->
+    <div class="about-img" style="flex: 1 1 300px; text-align: center;">
+      <img src="images/about1.jpg" alt="Mithra Fashine" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    </div>
+    
+    <!-- About Content -->
+    <div class="about-content" style="flex: 2 1 400px;">
+      <h2 style="color: #a64b2a; font-size: 2rem; margin-bottom: 15px;">
+        About <span style="color: #d17f49;">Saree Love</span>
+      </h2>
+      <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 10px;">
+        Welcome to <strong>Mithra Fashine</strong> — a space celebrating the artistry, tradition, and modern charm of Indian sarees. 
+        From silk to cotton, every fabric tells a story of heritage, craftsmanship, and grace.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.6;">
+        Our mission is to inspire saree lovers to embrace tradition with elegance and confidence.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="gallery">
+    <h2 class="section-title">Saree <span>Gallery</span></h2>
+
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="images/gal1.jpeg" alt="Saree Gallery 1"></div>
+      <div class="gallery-item"><img src="images/gal2.jpeg" alt="Saree Gallery 2"></div>
+      <div class="gallery-item"><img src="images/gal3.jpeg" alt="Saree Gallery 3"></div>
+      <div class="gallery-item"><img src="images/gal4.jpeg" alt="Saree Gallery 4"></div>
+      <div class="gallery-item"><img src="images/gal5.jpeg" alt="Saree Gallery 5"></div>
+      <div class="gallery-item"><img src="images/gal6.jpeg" alt="Saree Gallery 6"></div>
+      <div class="gallery-item"><img src="images/gal7.jpeg" alt="Saree Gallery 7"></div>
+      <div class="gallery-item"><img src="images/gal8.jpeg" alt="Saree Gallery 8"></div>
+      <div class="gallery-item"><img src="images/gal9.jpeg" alt="Saree Gallery 9"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left: Socials -->
+    <div class="footer-left">
+      <h3>Connect with Us</h3>
+      <div class="footer-socials">
+        <a href="mailto:msmithra693@gmail.com" title="Email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        </a>
+        <a href="https://www.instagram.com/yourinstagram" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://www.pinterest.com/yourpinterest" target="_blank" title="Pinterest">
+  <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest" style="width:28px; height:28px;">
+</a>
+
+      </div>
+    </div>
+
+    <!-- Center: Address & Contact -->
+    <div class="footer-center">
+      <h3>Our Address</h3>
+      <p>123, Mithra Saree Street</p>
+      <p>Coimbatore, Tamil Nadu - 641001</p>
+      <p>Available: Mon - Sat, 10 AM - 7 PM</p>
+      <p>Flat 30% Off on select collections!</p>
+    </div>
+
+    <!-- Right: Quick Links -->
+    <div class="footer-right">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Download App</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 Mithra Fashine | Designed with ❤️ in India</p>
+  </div>
+</footer>
+
+
+  <!-- =========================
+       JavaScript: place at BOTTOM
+       ========================= -->
+ <script src="script.js"></script>
+
+</body>
+</html>
