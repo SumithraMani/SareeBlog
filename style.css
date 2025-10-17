@@ -645,9 +645,6 @@
   }
 }
 
-
-
-/* ===== MOBILE & TABLET RESPONSIVE (NAVBAR + SOCIAL ICONS) ===== */
 /* ===== MOBILE & TABLET RESPONSIVE (NAVBAR + SOCIAL ICONS) ===== */
 @media (max-width: 900px) {
   /* Hamburger menu */
@@ -674,34 +671,31 @@
 
   /* Sidebar nav */
   .main-nav ul {
-    display: none; /* hidden by default */
-    flex-direction: column;
-    position: fixed;
+    display: flex;             /* keep in one line */
+    flex-direction: row;       /* horizontal alignment */
+    justify-content: center;   /* good spacing */
+    gap: 25px;                 /* spacing between items */
+    position: relative;        /* no side panel */
     top: 0;
-    right: -260px; /* hidden off-screen */
-    width: 260px;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    padding: 60px 20px;
-    gap: 25px;
-    transition: right 0.4s ease;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    transition: none;          /* no slide effect */
     z-index: 65;
-  }
-
-  .main-nav.open ul {
-    display: flex;
-    right: 0; /* slide in */
   }
 
   .main-nav a {
     color: #fff;
     font-size: 1.2rem;
+    text-align: center;
   }
 
-  /* Social icons on top-right above brand */
+  /* Social icons slightly lower */
   .social-icons {
     position: absolute;
-    top: 10px;   /* above the brand name */
+    top: 25px;   /* moved slightly lower from 10px */
     right: 20px;
     gap: 10px;
     z-index: 70;
@@ -711,6 +705,6 @@
   .brand-center {
     flex-direction: column;
     align-items: center;
-    padding-top: 50px; /* brand lower than icons */
+    padding-top: 50px; /* unchanged */
   }
 }
