@@ -633,123 +633,91 @@
 }
 
 /* here */
-/* ===== MOBILE RESPONSIVE (Phones) ===== */
-@media (max-width: 480px) {
-  /* Navbar & menu */
-  .main-nav {
-    position: static;
-    width: 100%;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
     margin-top: 10px;
-    text-align: center;
+  }
+}
+
+
+
+/* ===== MOBILE & TABLET RESPONSIVE (NAVBAR + SOCIAL ICONS) ===== */
+@media (max-width: 992px) {
+  /* Navbar adjustments */
+  .main-nav {
+    top: 20px;
+    right: 20px;
   }
 
   .main-nav ul {
-    flex-direction: column;
-    gap: 12px;
-    background: rgba(0,0,0,0.7);
-    padding: 12px;
-    border-radius: 8px;
-    display: none; /* toggle with menu button if needed */
+    gap: 25px;
   }
 
-  .menu-toggle {
-    display: block;
-    margin: 0 auto 10px auto;
-  }
-
-  /* Brand & social icons */
-  .brand-center {
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px 10px;
-  }
-
-  .brand-center h1 {
-    font-size: 1.6rem;
-  }
-
-  .brand-center h1 span {
-    font-size: 0.95rem;
-  }
-
+  /* Social icons adjustments */
   .social-icons {
-    position: static;
-    margin-top: 8px;
-    justify-content: center;
+    right: 20px;
+    top: 60px;
     gap: 10px;
   }
+}
 
-  .social-icons a {
-    width: 32px;
-    height: 32px;
+@media (max-width: 768px) {
+  /* Navbar toggle for mobile */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 50;
+    cursor: pointer;
   }
 
-  .social-icons a img {
-    width: 18px;
-    height: 18px;
-  }
-
-  /* Hero section */
-  .hero-content {
+  .main-nav ul {
+    display: none;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .hero-left img,
-  .hero-image img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .hero-right {
-    max-width: 100%;
-  }
-
-  .hero-right h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-right p {
-    font-size: 0.95rem;
-  }
-
-  /* Heritage box */
-  .heritage-box {
-    max-width: 100%;
-  }
-
-  /* Blog images */
-  .blog-post img {
-    height: auto;
-    max-height: 250px;
-  }
-
-  /* About images */
-  .about-img img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Gallery */
-  .gallery-container {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .gallery-item img {
-    width: 90%;
-    max-width: 280px;
-    height: auto;
-  }
-
-  /* Footer adjustments */
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
     gap: 15px;
+  }
+
+  .main-nav.open ul {
+    display: flex;
+  }
+
+  /* Social icons stacked on small screens */
+  .social-icons {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    flex-direction: row; /* row or column as you prefer */
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar smaller screens */
+  .main-nav ul {
+    top: 60px;
+    right: 10px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* Social icons smaller screens */
+  .social-icons {
+    top: 100px;
+    right: 10px;
+    width: auto;
+    gap: 8px;
   }
 }
