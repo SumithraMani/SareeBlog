@@ -648,73 +648,69 @@
 
 
 /* ===== MOBILE & TABLET RESPONSIVE (NAVBAR + SOCIAL ICONS) ===== */
-
-/* Hamburger menu for smaller devices */
-.menu-toggle {
-  display: none; /* hidden on desktop */
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 60;
-  width: 40px;
-  height: 35px;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: #3b2b1b;
-  border-radius: 2px;
-}
-
-/* Sidebar nav when menu is open */
+/* ===== MOBILE & TABLET RESPONSIVE (NAVBAR + SOCIAL ICONS) ===== */
 @media (max-width: 900px) {
+  /* Hamburger menu */
   .menu-toggle {
     display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 70;
   }
 
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #3b2b1b;
+    border-radius: 2px;
+  }
+
+  /* Sidebar nav */
   .main-nav ul {
     display: none; /* hidden by default */
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -250px; /* slide out of view */
-    width: 250px;
+    right: -260px; /* hidden off-screen */
+    width: 260px;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     padding: 60px 20px;
-    gap: 20px;
+    gap: 25px;
     transition: right 0.4s ease;
-    z-index: 55;
+    z-index: 65;
   }
 
   .main-nav.open ul {
-    right: 0; /* slide in */
     display: flex;
+    right: 0; /* slide in */
   }
 
   .main-nav a {
-    color: #fff; /* readable on dark sidebar */
+    color: #fff;
+    font-size: 1.2rem;
   }
 
-  /* Social icons above brand name */
+  /* Social icons on top-right above brand */
   .social-icons {
     position: absolute;
-    top: 10px;        /* above the brand */
-    right: 20px;      /* aligned right */
-    flex-direction: row;
-    gap: 12px;
+    top: 10px;   /* above the brand name */
+    right: 20px;
+    gap: 10px;
     z-index: 70;
   }
 
-  /* Brand name lower than social icons */
+  /* Push brand name slightly below social icons */
   .brand-center {
     flex-direction: column;
     align-items: center;
-    padding-top: 50px; /* pushes brand down below icons */
+    padding-top: 50px; /* brand lower than icons */
   }
 }
