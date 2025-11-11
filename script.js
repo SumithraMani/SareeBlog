@@ -49,3 +49,13 @@ document.querySelectorAll('.blog-post').forEach(post => {
     setTimeout(() => post.classList.remove('highlight'), 800);
   });
 });
+
+
+// ========== HAMBURGER MENU TOGGLE ==========
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('show');
+});
