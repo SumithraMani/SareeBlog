@@ -44,8 +44,8 @@
   gap: 5px;
   position: absolute; /* now relative to .nav-container */
   left: 0;           /* aligns to the left edge of container/divider */
-  top: 15%;          /* vertically center in navbar */
-  transform: translateY(-50%);
+  top: 2%;          /* vertically center in navbar */
+  transform: translateY(-70%);
   z-index: 999;
 }
 
@@ -394,7 +394,7 @@
   }
 
   .blog-post img {
-    height: 400px;
+    height: 450px;
   }
 
   .blog-post h3 {
@@ -431,7 +431,7 @@
   }
 
   .blog-post img {
-    height: 200px;
+    height: 250px;
   }
 
   .blog-post h3 {
