@@ -1,84 +1,81 @@
-/* ===== TOP NAVBAR ===== */
- 
-.top-nav ul {
-
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 20px;
+/* NAV WRAPPER */
+.top-nav {
+  position: relative; /* so absolute children are placed correctly */
   padding: 20px 0;
-  margin: 0;
-  flex-direction: row;
-  right: 10px;
 }
 
-.top-nav ul.active {
+/* Desktop: horizontal menu */
+.top-nav ul {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.top-nav a:hover,
+.top-nav a:active {
+  color: #000;   /* black */
+}
+
+
+/* Links */
 .top-nav a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: #d07b25;
   font-weight: 500;
-  letter-spacing: 1px;
-  transition: color 0.3s;
 }
 
-.top-nav a:hover {
-  color: #110901;
-}
-
-/* HAMBURGER MENU */
-
-.nav-container {
-  position: relative; 
-  max-width: 1200px;
-  margin: 0 auto; /* centers content */
-}
-
-/* Hamburger menu */
+/* HAMBURGER (hidden on desktop) */
 .menu-toggle {
-  display: none; /* default hidden on desktop */
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  position: absolute; /* now relative to .nav-container */
-  left: 10;           /* aligns to the left edge of container/divider */
-  top: 60%;          /* vertically center in navbar */
+  display: none;
+  position: absolute;
+  left: 10px;     /* horizontal position from container left */
+  top: 60px;      /* move this value down to move hamburger lower */
   z-index: 999;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
 }
-
 .menu-toggle span {
-  width: 26px;
+  width: 28px;
   height: 3px;
-  background: #7a4a2f; /* brown color */
+  background: #7a4a2f;
   border-radius: 3px;
-  transition: 0.4s;
+  display: block;
 }
 
-/* MOBILE ONLY */
+/* MOBILE: single media query, not nested */
 @media (max-width: 768px) {
+
+  /* show hamburger on mobile */
   .menu-toggle {
-    display: flex; /* show menu toggle on mobile */
+    display: flex;
   }
 
-  
-    @media (max-width: 768px) {
+  /* hide horizontal menu, convert to vertical dropdown */
   .top-nav ul {
-    display: none;       /* already there, keep it */
-    flex-direction: column; /* ensure vertical layout */
-    position: absolute;  /* make it overlay content */
-    top: 100px;           /* below navbar */
-    left:0;      /* align right */
-    background-color: #fff; 
-    padding: 20px;
+    display: none;            /* hidden until .active */
+    position: absolute;
+    left: 10px;               /* align with hamburger */
+    top: 100px;               /* place below hamburger (adjust if needed) */
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    padding: 12px 16px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     z-index: 100;
-  } /* hide nav links */
+  }
+
+  .top-nav ul.active {
+    display: flex;
   }
 }
+
 
 /* Divider */
 .divider {
@@ -394,7 +391,7 @@
   }
 
   .blog-post img {
-    height: 400px;
+    height: 350px;
   }
 
   .blog-post h3 {
@@ -431,7 +428,7 @@
   }
 
   .blog-post img {
-    height: 250px;
+    height: 200px;
   }
 
   .blog-post h3 {
@@ -661,7 +658,8 @@
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 35px; /* Perfect spacing in mobile */
+    gap: 35px; 
+    align-items: center; /* Perfect spacing in mobile */
   }
 
   .footer-socials {
@@ -678,6 +676,7 @@
   .footer-center h3,
   .footer-right h3 {
     font-size: 16px;
+       align-items: center;
   }
 
   .footer-socials img {
