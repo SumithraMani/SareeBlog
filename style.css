@@ -44,9 +44,8 @@
   cursor: pointer;
   gap: 5px;
   position: absolute; /* now relative to .nav-container */
-  left: 0;           /* aligns to the left edge of container/divider */
-  top: 15%;          /* vertically center in navbar */
-  transform: translateY(-50%);
+  left: 10;           /* aligns to the left edge of container/divider */
+  top: 60%;          /* vertically center in navbar */
   z-index: 999;
 }
 
@@ -70,8 +69,8 @@
     display: none;       /* already there, keep it */
     flex-direction: column; /* ensure vertical layout */
     position: absolute;  /* make it overlay content */
-    top: 60px;           /* below navbar */
-    right: 10px;         /* align right */
+    top: 100px;           /* below navbar */
+    left:0;      /* align right */
     background-color: #fff; 
     padding: 20px;
     border-radius: 8px;
