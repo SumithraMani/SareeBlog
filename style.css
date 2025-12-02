@@ -8,7 +8,8 @@
   gap: 20px;
   padding: 20px 0;
   margin: 0;
-  flex-direction: column;
+  flex-direction: row;
+  right: 10px;
 }
 
 .top-nav ul.active {
@@ -44,8 +45,8 @@
   gap: 5px;
   position: absolute; /* now relative to .nav-container */
   left: 0;           /* aligns to the left edge of container/divider */
-  top: 2%;          /* vertically center in navbar */
-  transform: translateY(-70%);
+  top: 15%;          /* vertically center in navbar */
+  transform: translateY(-50%);
   z-index: 999;
 }
 
@@ -306,7 +307,7 @@
 
 .blog-post img {
   width: 100%;
-  height: 430px;
+  height: 400px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -394,7 +395,7 @@
   }
 
   .blog-post img {
-    height: 450px;
+    height: 400px;
   }
 
   .blog-post h3 {
