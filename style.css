@@ -5,9 +5,14 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 60px;
+  gap: 20px;
   padding: 20px 0;
   margin: 0;
+  flex-direction: column;
+}
+
+.top-nav ul.active {
+  display: flex;
 }
 
 .top-nav a {
@@ -39,7 +44,7 @@
   gap: 5px;
   position: absolute; /* now relative to .nav-container */
   left: 0;           /* aligns to the left edge of container/divider */
-  top: 30%;          /* vertically center in navbar */
+  top: 15%;          /* vertically center in navbar */
   transform: translateY(-50%);
   z-index: 999;
 }
@@ -58,8 +63,20 @@
     display: flex; /* show menu toggle on mobile */
   }
 
+  
+    @media (max-width: 768px) {
   .top-nav ul {
-    display: none; /* hide nav links */
+    display: none;       /* already there, keep it */
+    flex-direction: column; /* ensure vertical layout */
+    position: absolute;  /* make it overlay content */
+    top: 60px;           /* below navbar */
+    right: 10px;         /* align right */
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+  } /* hide nav links */
   }
 }
 
@@ -249,7 +266,7 @@
 /* ===== BLOG SECTION ===== */
 .blog-section {
   width: 90%;
-   padding: 40px 10%;
+   padding: 40px 5%;
   text-align: center;
   
 }
@@ -287,11 +304,9 @@
   cursor: pointer;
 }
 
-
-
 .blog-post img {
   width: 100%;
-  height: 420px;
+  height: 430px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -379,7 +394,7 @@
   }
 
   .blog-post img {
-    height: 350px;
+    height: 400px;
   }
 
   .blog-post h3 {
