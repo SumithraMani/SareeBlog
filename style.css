@@ -1,5 +1,7 @@
 /* ===== TOP NAVBAR ===== */
+
 .top-nav ul {
+
   display: flex;
   justify-content: center;
   list-style: none;
@@ -22,20 +24,51 @@
 }
 
 /* HAMBURGER MENU */
+
+.nav-container {
+  position: relative; 
+  max-width: 1200px;
+  margin: 0 auto; /* centers content */
+}
+
+/* Hamburger menu */
 .menu-toggle {
-  display: none;
+  display: none; /* default hidden on desktop */
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  position: absolute; /* now relative to .nav-container */
+  left: 0;           /* aligns to the left edge of container/divider */
+  top: 50%;          /* vertically center in navbar */
+  transform: translateY(-50%);
   z-index: 999;
 }
 
 .menu-toggle span {
-  width: 25px;
+  width: 26px;
   height: 3px;
-  background: #e2e8f0;
+  background: #7a4a2f; /* brown color */
   border-radius: 3px;
   transition: 0.4s;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* show menu toggle on mobile */
+  }
+
+  .top-nav ul {
+    display: none; /* hide nav links */
+  }
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #d4c2a0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -63,6 +96,7 @@
 }
 
 .divider {
+  
   border: none;
   border-top: 1px solid #d4c2a0;
   width: 90%;
